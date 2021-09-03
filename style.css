@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-weight: 300;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  text-indent: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  background: url(./img/Space\ flat\ illustration\ set.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  width: 70%;
+  margin-top: 5%;
+}
+
+::placeholder{
+  color: #fff;
+  font-weight: 300;
+}
+
+input {  background-color: rgba(255, 255, 255, 0.3);
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 34px;
+  color: red;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: 300;
+  
+}
+
+header {
+  display: flex;
+  width: 70%;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 50px;
+  margin-top: 70px;
+  transition: 1s;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+#fullname {
+  color: black;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#fullname {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+h3 {
+  margin: 10px;
+}
+.hidden {
+  display: none;
+  transition: 1s;
+}
+h3 {
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  border-radius: 5px;
+  color: beige;
+  transition: 0.6s;
+}
+a:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.repository {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 750px) {
+  .item {
+    margin-left: 50px;
+  }
+}
+
+footer{
+  top: 90%;
+  left: 50%;
+  font-size: 8px;
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+  }
+  body {
+    height: 150vh;
+  }
+  .items {
+    flex-direction: column;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    height: 180vh;
+  }
+  input {
+    margin-top: 100px;
+  }
+}
